@@ -1,139 +1,101 @@
-# Customer-Purchase-Behavior-Analysis-
-An End to End Data Analytics Project 
-Customer Purchase Behavior Analysis using Python, SQL, and Power BI
-Project Overview
+# Customer Purchase Behavior Analysis using Python, SQL, and Power BI
 
-This project focuses on analyzing customer purchasing behavior using Python, SQL, and Power BI.
-It provides a complete end-to-end analytics solution that integrates data cleaning, SQL-based business insights, and interactive visualizations.
-The goal is to help businesses understand customer segments, spending patterns, and revenue drivers to make data-driven marketing and sales decisions.
+## Project Overview  
+This project provides a **data-driven analysis of customer purchase behavior** using Python, SQL, and Power BI.  
+It combines **data preprocessing, advanced SQL analysis, and interactive dashboards** to uncover insights on customer spending, product performance, discount effectiveness, and subscription trends.  
 
-Business Problem
+The goal is to help businesses make smarter marketing, inventory, and pricing decisions by understanding customer segments and their buying behavior.
 
-A retail company aims to understand customer shopping behavior to improve revenue, retention, and marketing effectiveness.
-The key questions include:
+---
 
-Which customer segments contribute most to overall revenue?
+## Business Problem  
+A retail company wants to understand:
 
-How do discounts and subscriptions impact purchase behavior?
+- Which customer groups contribute most to revenue?  
+- How effective are discounts in driving purchases?  
+- Which products and categories perform the best?  
+- Do subscribers and loyal customers spend more?  
+- How can customer segmentation improve marketing strategies?
 
-Which products and categories perform the best?
+---
 
-Do loyal and repeat customers spend more than new customers?
+## Project Workflow  
 
-How can customer segmentation help optimize sales and customer experience?
+### 1. Data Preparation (Python)
+- Cleaned and transformed raw data with missing value handling.  
+- Created derived features like `age_group` and `purchase_frequency_days`.  
+- Used `SQLAlchemy` and `Psycopg2` to load the cleaned dataset into PostgreSQL.  
 
-Project Workflow
-1. Data Preparation (Python)
+### 2. Data Analysis (SQL)
+- Performed structured analysis using SQL queries on the `customer_behavior` table.  
+- Key analyses include:  
+  - Revenue by gender and subscription status  
+  - Top-rated and top-selling products  
+  - Discount performance and shipping trends  
+  - Customer segmentation (New, Returning, Loyal)  
+  - Revenue contribution by age group  
 
-Loaded and explored customer transaction data.
+### 3. Visualization (Power BI)
+- Designed an interactive **Customer Behavior Dashboard** in Power BI.  
+- Added dynamic filters (slicers) for gender, category, and shipping type.  
+- Showcased KPIs such as:  
+  - Total Customers  
+  - Average Purchase Amount  
+  - Revenue by Age Group  
+  - Subscription Spend Comparison  
 
-Cleaned missing values and handled data inconsistencies.
+---
 
-Created new derived fields such as age_group and purchase_frequency_days.
+## Tools and Technologies  
 
-Established a connection between Python and PostgreSQL using SQLAlchemy and Psycopg2.
+| Tool | Purpose |
+|------|----------|
+| **Python (Pandas, NumPy)** | Data cleaning and preprocessing |
+| **PostgreSQL** | SQL querying and database management |
+| **Power BI** | Data visualization and business dashboard |
+| **Google Colab / Jupyter Notebook** | Data analysis environment |
+| **GitHub** | Version control and portfolio hosting |
 
-Loaded the cleaned dataset into the SQL database for analysis.
+---
 
-2. Data Analysis (SQL)
+## Key Insights  
+- Customers using discounts often spent above the average purchase amount.  
+- Subscribers contributed higher total revenue and showed better retention.  
+- Express shipping correlated with higher spending behavior.  
+- Top 5 products by review rating and sales helped identify customer preferences.  
+- Returning and loyal customers dominated the customer base, showing brand strength.  
+- Middle-aged customers generated the highest revenue share.  
 
-Used SQL to perform in-depth analysis on the customer_behavior table.
+---
 
-Explored the following analytical areas:
+## Business Recommendations  
+- Focus on high-revenue segments for personalized marketing.  
+- Encourage subscriptions with loyalty benefits and rewards.  
+- Optimize discounts to balance profitability and customer engagement.  
+- Use Power BI dashboards to track real-time performance metrics.  
+- Prioritize stocking top-performing and highly-rated products.  
 
-Total revenue by gender
+---
 
-Effectiveness of discounts on sales
+## Future Scope  
+- Integrate predictive analytics using machine learning to forecast churn and next purchase.  
+- Include customer feedback and marketing campaign response data for deeper insights.  
+- Automate ETL pipelines for real-time Power BI dashboard updates.  
+- Build APIs for seamless data synchronization between systems.  
 
-Average spending by subscription type
+---
 
-Product performance based on review ratings
+## Author  
 
-Customer segmentation (New, Returning, Loyal)
+**Addagalla Pravallika**  
+Email: [a.pravallika.ds@gmail.com](mailto:a.pravallika.ds@gmail.com)  
+GitHub: [https://github.com/Pravallika-ds](https://github.com/Pravallika-ds)  
+LinkedIn: [https://linkedin.com/in/a-pravallika](https://linkedin.com/in/a-pravallika)  
+Portfolio: [https://pravallika-addagalla.lovable.app](https://pravallika-addagalla.lovable.app)
 
-Revenue contribution by age group
+---
 
-Applied aggregation, CASE statements, subqueries, and window functions to uncover patterns and insights.
+## Tags  
+`#DataAnalysis` `#SQL` `#PowerBI` `#Python` `#DataVisualization` `#CustomerBehavior` `#AnalyticsProject` `#BusinessIntelligence`
 
-3. Data Visualization (Power BI)
 
-Developed an interactive Power BI dashboard to visualize customer behavior.
-
-Implemented slicers for gender, category, and shipping type.
-
-Displayed KPIs such as total customers, average purchase amount, and total revenue.
-
-Enabled the business to track performance by segment, category, and purchase trend.
-
-Dashboard insights helped identify top-performing products and customer segments.
-
-Tools and Technologies
-
-Python (Pandas, NumPy, SQLAlchemy, Psycopg2)
-
-PostgreSQL (SQL Queries and Data Management)
-
-Power BI (Data Visualization and Dashboard Design)
-
-Google Colab / Jupyter Notebook (Development Environment)
-
-GitHub (Version Control and Portfolio Hosting)
-
-Key Findings
-
-Customers who used discounts often spent above the average purchase value.
-
-Subscribers showed higher spending and stronger retention than non-subscribers.
-
-Express shipping customers tended to have higher purchase amounts.
-
-Top-rated and most purchased products indicated clear consumer preferences.
-
-Returning and loyal customers accounted for a large share of revenue.
-
-Middle-aged customers were identified as the highest contributing age group.
-
-Business Recommendations
-
-Focus on high-spending customer segments with targeted marketing.
-
-Promote subscription plans through loyalty benefits and personalized offers.
-
-Maintain stock for best-selling and high-rated products to avoid sales loss.
-
-Optimize discount strategies for high-value categories to increase conversions.
-
-Use Power BI dashboards to track key performance indicators regularly.
-
-Challenges and Learnings
-
-Faced connection issues while integrating PostgreSQL with Python.
-
-Managed missing and inconsistent data during preprocessing.
-
-Resolved syntax and data-type errors in SQL queries.
-
-Learned how to integrate Python, SQL, and Power BI in a single analytical workflow.
-
-Improved the ability to translate technical outputs into business insights.
-
-Future Scope
-
-Extend analysis with time-series and seasonal purchase trends.
-
-Develop predictive models to forecast customer churn and next purchase behavior.
-
-Automate data refresh for real-time dashboards in Power BI.
-
-Integrate campaign and feedback data for deeper customer understanding.
-
-
-
-Addagalla Pravallika
-Email: a.pravallika.ds@gmail.com
-
-GitHub: https://github.com/Pravallika-ds
-
-LinkedIn: https://linkedin.com/in/a-pravallika
-
-Portfolio: https://pravallika-addagalla.lovable.app
